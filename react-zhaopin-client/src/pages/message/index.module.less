@@ -1,0 +1,22 @@
+// 文本框始终在底部
+.input-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: inherit;
+}
+  
+// 消息文本居右
+.chatPage  {
+    .chatMe {
+        :global {
+            .am-list-extra {
+                flex-basis: auto;  /*宽度包裹内容*/
+            }
+            .am-list-content {
+                padding-right: 15px;
+                text-align: right;
+            }
+        }
+    }
+}
